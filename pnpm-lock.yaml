@@ -494,8 +494,8 @@ importers:
         specifier: ^0.2.26
         version: 0.2.26(@solidjs/meta@0.28.2)(@solidjs/router@0.8.2)(solid-js@1.7.2)(solid-start-node@0.2.19)(vite@4.3.9)
       undici:
-        specifier: ^5.15.1
-        version: 5.22.1
+        specifier: ^5.26.2
+        version: 5.26.2
     devDependencies:
       autoprefixer:
         specifier: ^10.4.13
@@ -505,7 +505,7 @@ importers:
         version: 8.4.23
       solid-start-node:
         specifier: ^0.2.19
-        version: 0.2.19(solid-start@0.2.26)(undici@5.22.1)(vite@4.3.9)
+        version: 0.2.19(solid-start@0.2.26)(undici@5.26.2)(vite@4.3.9)
       tailwindcss:
         specifier: ^3.2.4
         version: 3.3.3
@@ -2523,6 +2523,10 @@ packages:
       strip-json-comments: 3.1.1
     transitivePeerDependencies:
       - supports-color
+
+  /@fastify/busboy@2.0.0:
+    resolution: {integrity: sha512-JUFJad5lv7jxj926GPgymrWQxxjPYuJNiNjNMzqT+HiuP6Vl3dk5xzG+8sTX96np0ZAluvaMzPsjhHZ5rNuNQQ==}
+    engines: {node: '>=14'}
 
   /@fontsource/fira-mono@4.5.10:
     resolution: {integrity: sha512-bxUnRP8xptGRo8YXeY073DSpfK74XpSb0ZyRNpHV9WvLnJ7TwPOjZll8hTMin7zLC6iOp59pDZ8EQDj1gzgAQQ==}
@@ -10551,7 +10555,7 @@ packages:
       fast-glob: 3.3.1
       js-yaml: 4.1.0
       supports-color: 9.3.1
-      undici: 5.22.1
+      undici: 5.26.2
       yargs-parser: 21.1.1
     dev: true
 
@@ -12201,7 +12205,7 @@ packages:
       '@babel/types': 7.22.5
       solid-js: 1.7.2
 
-  /solid-start-node@0.2.19(solid-start@0.2.26)(undici@5.22.1)(vite@4.3.9):
+  /solid-start-node@0.2.19(solid-start@0.2.26)(undici@5.26.2)(vite@4.3.9):
     resolution: {integrity: sha512-5Rtlh4PKm6zDuvFoPzf8xEzz5ca35uoyCeHbEqhcVnD9OqqhW8iKevaoNwlJ3Vm9yZHP53SWcS6F3e/KOnvBpA==}
     peerDependencies:
       solid-start: '*'
@@ -12217,7 +12221,7 @@ packages:
       sirv: 2.0.3
       solid-start: 0.2.26(@solidjs/meta@0.28.2)(@solidjs/router@0.8.2)(solid-js@1.7.2)(solid-start-node@0.2.19)(vite@4.3.9)
       terser: 5.18.1
-      undici: 5.22.1
+      undici: 5.26.2
       vite: 4.3.9(@types/node@20.5.0)
     transitivePeerDependencies:
       - supports-color
@@ -12285,9 +12289,9 @@ packages:
       set-cookie-parser: 2.6.0
       sirv: 2.0.3
       solid-js: 1.7.2
-      solid-start-node: 0.2.19(solid-start@0.2.26)(undici@5.22.1)(vite@4.3.9)
+      solid-start-node: 0.2.19(solid-start@0.2.26)(undici@5.26.2)(vite@4.3.9)
       terser: 5.18.1
-      undici: 5.22.1
+      undici: 5.26.2
       vite: 4.3.9(@types/node@20.5.0)
       vite-plugin-inspect: 0.7.38(rollup@3.28.0)(vite@4.3.9)
       vite-plugin-solid: 2.7.0(solid-js@1.7.2)(vite@4.3.9)
@@ -13404,6 +13408,13 @@ packages:
     engines: {node: '>=14.0'}
     dependencies:
       busboy: 1.6.0
+    dev: true
+
+  /undici@5.26.2:
+    resolution: {integrity: sha512-a4PDLQgLTPHVzOK+x3F79/M4GtyYPl+aX9AAK7aQxpwxDwCqkeZCScy7Gk5kWT3JtdFq1uhO3uZJdLtHI4dK9A==}
+    engines: {node: '>=14.0'}
+    dependencies:
+      '@fastify/busboy': 2.0.0
 
   /unenv@1.7.1:
     resolution: {integrity: sha512-iINrdDcqoAjGqoIeOW85TIfI13KGgW1VWwqNO/IzcvvZ/JGBApMAQPZhWcKhE5oC/woFSpCSXg5lc7r1UaLPng==}
